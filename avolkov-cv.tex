@@ -1,147 +1,205 @@
-% !TEX TS-program = xelatex
+% !TeX TS-program xelatex
 
-\documentclass[]{av-twentysecondcv}
- 
+% Alexander Volkov
+% Curriculum vitae
+% Circa summer 2019
+
+\documentclass[]{article}
+
+\usepackage[letterpaper,margin=0.75in]{geometry}
+
+\usepackage{nopageno}
+
+%\usepackage{helvet} % Default font is the helvetica postscript font
+\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{titlesec}
+\usepackage{endnotes}
+\usepackage[hidelinks]{hyperref}
+
+%\usepackage{showframe}
+
+\usepackage{enumitem}
+\setlist{itemsep=0pt,parsep=0pt}
+
+%\usepackage{parskip}
+
+\usepackage{pifont}
+
+\setlength{\parindent}{0em}
+
+\titleformat{\section}
+{\normalfont\bfseries}
+{\thesection.}{0.5em}{}
+
+\titleformat{\subsection}[runin]
+{\itshape}
+{\thesubsection}{0.5em}{}
+
+
 \begin{document}
 
-%%%%%%%%%%%%%%%%%
-%%PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%
-%%PERSONAL INFO%%%
-%%%%%%%%%%%%%%%%
-
-\profilepic{alex.jpg} %path of profile pic
-\cvname{Alexander Volkov} %your name
-\cvjobtitle{Roboticist}%your actual job position
-\cvaddress{26 High St. Apt 7\newline Portland, ME 04102}%address
-\cvnumberphone{+1 917.742.0637}%telphone number
-\cvmail{rus.tech.studio@gmail.com}%e-mail
-\cvsite{www.rustechstudio.com}%personal site
+\begin{center} % Name at the top
+	{\Large\bf Alexander Volkov}\\
+	{\large Robotics, Mechatronics, \& Controls} \\
+	
+	\rule{\textwidth}{1pt}
+	\vspace*{-0.5em}
+	
+	26 High St, Apt 7 \\
+	Portland, ME 04101 \\
+	917.742.0637 \\
+	rus.tech.studio@gmail.com
+\end{center}
 
 
-\aboutme{
+%\begin{table}[ht!]
+%	\centering
+%	\begin{tabular}{rl}
+%		Email:                  & rus.tech.studio@gmail.com \\
+%		Tel:                  & 917.742.0637              \\
+%		\multirow{2}{*}{Addr:} & 26 High St., Apt 7        \\
+%		& Portland, ME 04102     
+%	\end{tabular}
+%\end{table}
+
+\section*{EXPERIENCE}
+
+\subsection*{Mechatronics / Robotics Engineer} \hfill Sep. 2018 -- Apr. 2019 \\
+Berkshire Grey \hfill Lexington, MA
+
+\textellipsis~Developed software interfaces to custom hardware, designed safety and power control cabinets, debugged and repaired various robotic machines, constructed robot testing equipment,  and assisted in the design of future system prototypes.
+
+%\begin{itemize}
+%	\item Developed python drivers 
+%	\item Debugged and repaired various robotic machines
+%	\item Constructed custom testing equipment
+%	\item Assisted in the design of future system prototypes, etc.
+%\end{itemize}
+
+\subsection*{Graduate Researcher} \hfill Aug. 2016 -- Aug. 2018 \\
+Manipulation Lab, The Robotics Institute: Prof. Matt Mason \hfill Pittsburgh, PA
+
+\textellipsis~Investigated modern modeling and control techniques for dynamic robot manipulation and locomotion.
+
+\subsection*{Lab Technician} \hfill Oct. 2015 -- Dec. 2016 \\
+Robotic Personal Assistants Lab, Cornell University: Prof. Ross Knepper \hfill Ithaca, NY
+
+\textellipsis~Designed system architecture for a remote controlled car retrofitted for autonomous operation. Assisted in the initial system design of a custom autonomous blimp designed for long-deployment NDVI and atmospheric measurement.
+
+\subsection*{Undergraduate Researcher} \hfill Oct. 2015 -- Dec. 2016 \\
+Laboratory for Intelligent Machine Systems, Cornell University: Prof. Ephrahim Garcia \hfill Ithaca, NY
+
+\textellipsis~Designed and constructed a custom, high-power and high-bandwidth linear dynamometer for testing fluidic artificial muscles. Also assisted in the design, construction, and testing of a human-size bipedal walking machine, used to study the energetics of human locomotion.
+
+\subsection*{Undergraduate Researcher} \hfill Oct. 2015 -- Dec. 2016 \\
+Creative Machines Lab, Cornell University: Prof. Hod Lipson \hfill Ithaca, NY
+
+\textellipsis~Developed hardware implementations of cellular soft robots evolved in simulation for locomotion. Additionally, assisted in research into novel soft-robot actuation techniques.
+
+\subsection*{Hardware Intern} \hfill Jun. 2014 -- Aug. 2014 \\
+Vecna Robotics \hfill Cambridge, MA
+
+\textellipsis~Internship focused on mobile hydraulic pump system construction,
+characterization, and analysis.
+
+\section*{SKILLS} 
+
+\subsection*{Mechatronics:} 
+Multi-domain physical modeling, controls \& state estimation, sensor and actuator selection, OEM component integration, microcontroller firmware design, ML/AI for automation
+
+\subsection*{Maker:}
+Rapid prototyping (software/electronics/hardware), reverse engineering, debugging, field repairs
+
+\subsection*{CAD Software:}
+Solidworks, Ansys, Altium Designer, EagleCAD, SPICE, Blender (learning)
+
+\subsection*{Programming Languages:} 
+Python [4/5], MATLAB + Simulink [3/5], C [3/5], C++ [2/5], Rust (learning) [1/5]
+
+\subsection*{Typesetting Languages:}
+\LaTeX [4/5], Markdown [4/5]
+
+\subsection*{Human Languages:}
+English [5/5], Russian [4/5]
+
+\clearpage
+\section*{EDUCATION}
+
+\emph{Master of Science}, Robotics (in progress) \hfill Aug. 2016 -- Dec. 2019\\
+The Robotics Institute, Carnegie Mellon University \hfill Pittsburgh, PA \\
+Thesis: ``The Art of Robotics: Toward a Holistic Approach''\endnotemark \\
+
+\emph{Bachelor of Science}, Electrical \& Computer Engineering \hfill Aug. 2012 -- May 2016\\
+Cornell University \hfill Ithaca, NY \\
+Minors: Computer Science, Mechanical Engineering\\
+Final GPA: 3.85 (Magna cum laude) \\
+Concentration: Mechatronics, Robotics
+
+\endnotetext{In my master's thesis, I argue that robotics should be studied as an independent scientific field that captures the unique properties, challenges, and inter-disciplinary scope of intelligent autonomous systems.
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill text section, each skill must have a value between 0 an 6%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skillstext{{lovely/4},{narcissistic/3}}
-
-\makeprofile
-%%%%%%%%%%%%%%%%%%%%
-%%END PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%BODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%
-%%SIMPLE SECTION%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-\section{foobar}
-The heroine and the dreamer of Wonderland;  Alice is the principal character.
-
-\section{education}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%TWENTY LIST ITEMS%%%%%%%%%%%%%%
-%%    Four arguments: date; title; where; description %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{twenty}
-  \twentyitem
-    {since 1865}
-    {Ph.D. {\normalfont candidate in Computer Science}}
-    {Wonderland}
-    {\emph{A Quantified Theory of Social Cohesion.}}
-  \twentyitem
-    {1863-1865}
-    {M.Sc. magna cum laude}
-    {Wonderland}
-    {Majoring in Computer Science}
-  \twentyitem
-    {1861-1863}
-    {B.Sc. magna cum laude}
-    {Wonderland}
-    {Majoring in Computer Science}
-  \twentyitem
-    {1856-1861}
-    {High school}
-    {Wonderland}
-    {Specializing in mathematics and physics.}
-\end{twenty}
+\section*{TEACHING}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
-%%% Two arguments: date; title/description %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{publications}
+\subsection*{Finch Robot Programming with Scratch} \hfill Jun. 2017, Jun. 2018 \\
+CMU Gelfand Center \hfill Pittsburgh, PA \\
+\textellipsis~Prepared and taught four sessions of a 20 hour introductory robotics course for 4th/5th graders. \\
 
-\begin{twentyshort}
-  \twentyitemshort
-    {1865}
-    {Chapter One, Down the Rabbit Hole.}
-  \twentyitemshort
-    {1865}
-    {Chapter Two, The Pool of Tears.}
-  \twentyitemshort
-    {1865}
-    {Chapter Three,  The Caucus Race and a Long Tale.}
-  \twentyitemshort
-    {1865}
-    {Chapter Four,  The Rabbit Sends a Little Bill.}
-  \twentyitemshort
-    {1865}
-    {Chapter Five,  Advice from a Caterpillar.}
-\end{twentyshort}
+\emph{Undergraduate Teaching Assistant} \hfill Aug. 2014 -- May 2016 \\
+Cornell University \hfill Ithaca, NY \\
+Courses: ECE Practice and Design, Robotic Manipulation, System Dynamics, Mechatronics
+
+%\ding{110} ECE Practice and Design (Spring 2016)\\
+%\ding{110} Robotic Manipulation (Fall 2015) \\
+%\ding{110} System Dynamics (Spring 2015) \\
+%\ding{110} Mechatronics (Fall 2014)
+
+%\begin{itemize}
+%	\item ECE Practice and Design (Spring 2016)
+%	\item Robotic Manipulation (Fall 2015)
+%	\item System Dynamics (Spring 2015)
+%	\item Mechatronics (Fall 2014)
+%\end{itemize}
 
 
+\section*{AWARDS}
 
-\section{awards}
+\subsection*{Hunter R. Rawlings III Cornell Presidential Research Scholarship} \hfill Aug. 2012 -- May 2016 \\
+Cornell University \hfill Ithaca, NY
 
-\begin{twentyshort}
-  \twentyitemshort
-    {1987}
-    {All-Time Best Fantasy Novel.}
-  \twentyitemshort
-    {1998}
-    {All-Time Best Fantasy Novel before 1990.}
-\end{twentyshort}
+\subsection*{Engineering Dean's List} \hfill Aug. 2012 -- May 2016 \\
+Cornell University \hfill Ithaca,  NY
+
+\section*{PUBLICATIONS\endnotemark}
+
+\subsection*{Sensorless Pose Determination using Randomized Action Sequences.} \hfill 2019 \\
+P Mannam, A Volkov, R Paolini, G Chirikjian, M Mason \hfill Entropy
+
+\subsection*{Linear dynamometer testing of hydraulic artificial muscles with variable recruitment.} \hfill 2017 \\
+J Chipka, MA Meller, A Volkov, M Bryant, E Garcia \hfill Journal of Intelligent Material Systems and Structures
+
+\subsection*{Improving actuation efficiency through variable recruitment hydraulic McKibben muscles.} \hfill 2016 \\
+M Meller, J Chipka, A Volkov, M Bryant, E Garcia \hfill Bioinspiration \& Biomimetics
+
+\endnotetext{Happy to provide copies upon request; also available at \url{www.rustechstudio.com/papers}}
+
+\section*{OUTREACH} 
+
+\subsection*{Covestro PRSEF Sponsor Judge} \hfill Mar. 2017\\
+CMU Gelfand Center \hfill Pittsburgh, PA
+
+\subsection*{Cornell Alternative Breaks Program} \hfill Jan. 2015 -- Apr. 2015 \\
+Cornell University \& Mountain Lake Academy \hfill Lake Placid, NY 
+
+\subsection*{Cornell IvyQ 2015 Planning Committee} \hfill Dec. 2014 -- Nov. 2015\\
+Cornell University \hfill Ithaca, NY
 
 
-\section{experience}
+\theendnotes
 
-\begin{twenty}
-  \twentyitem
-    {1900}
-    {Alice in Wonderland-The Circra (1900's) Silent Film.}
-    {Film}
-    {The first Alice on film was over a hundred years ago.}
-  \twentyitem
-    {1933}
-    {Alice in Wonderland 1933 version.}
-    {Film}
-    {This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
-\twentyitem
-    {1951}
-    {Disney Film.}
-    {Film}
-    {Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
-
-\end{twenty}
-\section{other information}
-Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a “poky little house,” and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
-
-%%%%%%%%%%%%%%%%%%%%
-%%%%%ENDBODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-
-\end{document} 
+\end{document}
