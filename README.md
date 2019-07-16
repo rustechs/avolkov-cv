@@ -1,9 +1,6 @@
 # avolkov-cv
-My CV (updated Summer 2019)
+My Robotics/Mechatronics CV (as of Summer 2019), along with its LaTeX source.
 
 ## attributions
 
-LaTeX theme based on
-(https://www.latextemplates.com/template/medium-length-graduate-cv)
-
-[foo][bar]
+Styling inspired by: https://www.latextemplates.com/template/medium-length-graduate-cv

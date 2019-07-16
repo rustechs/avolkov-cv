@@ -5,6 +5,7 @@
 *.lot
 *.fls
 *.out
+*.ent
 *.toc
 *.fmt
 *.fot
